@@ -1,0 +1,53 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Practice_assignment.Models
+{
+    public enum ServiceRequestStatus // Workflow states for service request
+    {
+        Pending,
+        InProgress,
+        Completed,
+        Cancelled
+    }
+    public class ServiceRequest
+    {
+            public int Id { get; set; }
+
+            [Required]
+            public int ContractId { get; set; }
+
+            [Required(ErrorMessage = "Description is required.")]
+            [StringLength(1000)]
+            public string Description { get; set; } = string.Empty;
+
+            
+            // Cost in USD as entered by user
+            [Required]
+            [Range(0.01, double.MaxValue, ErrorMessage = "Cost must be greater than zero.")]
+            [Column(TypeName = "decimal(18,2)")]
+            public decimal CostUsd { get; set; }
+
+            
+            // Converted ZAR cost that is saved after currency conversion
+           
+            [Column(TypeName = "decimal(18,2)")]
+            public decimal CostZar { get; set; }
+
+            
+            // Exchange rate used at time of creation
+            
+            [Column(TypeName = "decimal(18,6)")]
+            public decimal ExchangeRateUsed { get; set; }
+
+            [Required]
+            public ServiceRequestStatus Status { get; set; } = ServiceRequestStatus.Pending;
+
+            public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+
+            // Navigation
+            [ForeignKey("ContractId")]
+            public Contract? Contract { get; set; }
+        }
+    }
+
