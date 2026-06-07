@@ -121,3 +121,6 @@ The MVC application no longer connects directly to the database. Instead:
 | glms-backend-api | Custom (PracticeAssignment.API) | 7001 |
 | glms-frontend-web | Custom (Practice assignment) | 5000 |
 
+
+# Youtube Link: 
+https://youtu.be/SkbgyPz5wYw 
