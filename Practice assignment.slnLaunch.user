@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Practice assignment\\Practice assignment.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PracticeAssignment.API\\PracticeAssignment.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
