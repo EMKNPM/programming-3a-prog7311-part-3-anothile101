@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  sql-server-db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: glms-sql-server
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Password123"
+      MSSQL_PID: "Express"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserver-data:/var/opt/mssql
+    networks:
+      - glms-network
+
+  glms-backend-api:
+    build:
+      context: .
+      dockerfile: PracticeAssignment.API/Dockerfile
+    container_name: glms-api
+    ports:
+      - "7001:8080"
+    depends_on:
+      - sql-server-db
+    networks:
+      - glms-network
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sql-server-db;Database=PracticeAssignmentDB;User Id=sa;Password=YourStrong!Password123;TrustServerCertificate=True;
+
+  glms-frontend-web:
+    build:
+      context: .
+      dockerfile: Practice assignment/Dockerfile
+    container_name: glms-web
+    ports:
+      - "9000:8080"
+    depends_on:
+      - glms-backend-api
+    networks:
+      - glms-network
+    environment:
+      - ApiBaseUrl=http://glms-backend-api:80/
+
+networks:
+  glms-network:
+    driver: bridge
+
+volumes:
+  sqlserver-data:
