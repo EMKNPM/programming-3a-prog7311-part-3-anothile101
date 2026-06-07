@@ -1,0 +1,14 @@
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\bin\Debug\net9.0\PracticeAssignment.Data.deps.json
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\bin\Debug\net9.0\PracticeAssignment.Data.runtimeconfig.json
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\bin\Debug\net9.0\PracticeAssignment.Data.dll
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\bin\Debug\net9.0\PracticeAssignment.Data.pdb
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.csproj.AssemblyReference.cache
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.AssemblyInfoInputs.cache
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.AssemblyInfo.cs
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.csproj.CoreCompileInputs.cache
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.dll
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\refint\PracticeAssignment.Data.dll
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.pdb
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\PracticeAssignment.Data.genruntimeconfig.cache
+C:\Users\27817\Downloads\PROG3A-POE--mainn\PROG3A-POE--main\PracticeAssignment.Data\obj\Debug\net9.0\ref\PracticeAssignment.Data.dll
