@@ -27,6 +27,7 @@ GLMS is an enterprise-grade logistics management platform for TechMove Logistics
  **Contract**:  Id, ClientId, StartDate, EndDate, Status (Draft/Active/Expired/OnHold), ServiceLevel (Gold/Silver/Bronze), SignedAgreementPath |
  **ServiceRequest**: Id, ContractId, Description, CostUsd, CostZar, ExchangeRateUsed, Status (Pending/InProgress/Completed/Cancelled), CreatedAt |
 
+---
 #### 2. Design Patterns Implemented
 
  **Repository**  
@@ -39,7 +40,7 @@ GLMS is an enterprise-grade logistics management platform for TechMove Logistics
  - Contract status change notifications |
 
    
-
+---
 # 3. Workflow & Business Logic
 
 - **Date Validation:** End date must be after start date
@@ -52,11 +53,13 @@ GLMS is an enterprise-grade logistics management platform for TechMove Logistics
 - Files saved to server with GUID naming to prevent overwrites
 - Validation: Only PDF files allowed, max 10MB size limit
 
+---
 # 5. External API Integration
 
 - Consumes ExchangeRate-API for USD to ZAR conversion
 - Real-time exchange rates applied to service request costs
 
+---
 # 6. Unit Testing (xUnit)
 
 **Test Categories:**
@@ -70,7 +73,7 @@ GLMS is an enterprise-grade logistics management platform for TechMove Logistics
 
 ---
 
-## Part 3: Service-Oriented Architecture with Docker
+# Part 3: Service-Oriented Architecture with Docker
 
 # Architecture Overview
 
@@ -94,16 +97,21 @@ GLMS is an enterprise-grade logistics management platform for TechMove Logistics
 | GET | `/api/Currency/rate` | Get USD/ZAR exchange rate |
 | POST | `/api/Currency/convert` | Convert USD to ZAR |
 
+---
 **Authentication:** JWT Bearer tokens required for all endpoints except login.
 
+---
 # Repository & Service Layer (API Backend)
 
+---
 **Repositories**  
 - `IContractRepository`, `ContractRepository`, `IClientRepository`, `ClientRepository` 
-  
+
+  ---
 **Services**
 - `IContractService`, `ContractService`, `IClientService`, `ClientService` 
 
+---
 # MVC Frontend (Refactored)
 
 The MVC application no longer connects directly to the database. Instead:
@@ -111,6 +119,7 @@ The MVC application no longer connects directly to the database. Instead:
 - Stores JWT token in session
 - All CRUD operations go through the API
 
+---
 # Docker Configuration
 
 **Three containers:**
@@ -122,5 +131,6 @@ The MVC application no longer connects directly to the database. Instead:
 | glms-frontend-web | Custom (Practice assignment) | 5000 |
 
 
+---
 # Youtube Link: 
 https://youtu.be/SkbgyPz5wYw 
